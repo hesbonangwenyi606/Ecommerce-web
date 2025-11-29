@@ -210,9 +210,6 @@ GET  /api/orders/:id
 ```
 POST /api/payments/create-checkout-session
 ```
-
----
-
 ## Testing
 * Jest (backend)
 * React Testing Library (frontend)
