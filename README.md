@@ -243,7 +243,6 @@ MIT License
 ---
 
 ## 🙌 Acknowledgements
-
 * Stripe API
 * AWS Docs
 * React Community
