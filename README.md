@@ -198,18 +198,14 @@ DELETE /api/products/:id (admin)
 ```
 
 ### **Orders**
-
-```
 POST /api/orders
 GET  /api/orders/user
 GET  /api/orders/:id
 ```
 
 ### **Payments**
-
-```
 POST /api/payments/create-checkout-session
-```
+
 ## Testing
 * Jest (backend)
 * React Testing Library (frontend)
