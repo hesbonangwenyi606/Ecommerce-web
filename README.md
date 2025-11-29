@@ -237,10 +237,7 @@ Include images of homepage, product page, cart, admin dashboard.
 ---
 
 ## 📄 License
-
 MIT License
-
----
 
 ## 🙌 Acknowledgements
 * Stripe API
