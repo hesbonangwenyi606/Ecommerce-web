@@ -131,7 +131,7 @@ The app should be live at:
 
 ---
 
-## 🗄️ Database
+## Database
 ### **PostgreSQL Schema Includes:**
 * Users
 * Products
