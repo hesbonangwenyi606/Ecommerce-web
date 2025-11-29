@@ -234,7 +234,6 @@ Include images of homepage, product page, cart, admin dashboard.
 3. Commit your work
 4. Open a pull request
 
----
 
 ## License
 MIT License
