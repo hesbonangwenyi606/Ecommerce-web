@@ -70,9 +70,7 @@ root/
  └── docker-compose.yml (optional)
 ```
 
----
-
-## 🔧 Installation & Setup
+## Installation & Setup
 
 ### **1. Clone the repository**
 
@@ -125,11 +123,8 @@ npm run dev
 ```
 
 The app should be live at:
-
 * **Frontend:** [http://localhost:5173](http://localhost:5173)
 * **Backend:** [http://localhost:5000](http://localhost:5000)
-
----
 
 ## Database
 ### **PostgreSQL Schema Includes:**
