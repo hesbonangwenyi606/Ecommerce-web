@@ -169,8 +169,7 @@ You can also containerize using Docker.
 
 ---
 
-## 🔐 Authentication
-
+## Authentication
 * JSON Web Tokens (JWT)
 * Password hashing using bcrypt
 * Protected routes for user and admin
