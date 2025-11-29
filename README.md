@@ -146,10 +146,8 @@ You may generate migrations using Prisma/Sequelize depending on your stack.
 
 ---
 
-## 💳 Payments (Stripe)
-
+## Payments (Stripe)
 The backend integrates Stripe for secure payment handling.
-
 * Supports test and live modes
 * Accepts card payments
 * Generates Stripe checkout sessions
