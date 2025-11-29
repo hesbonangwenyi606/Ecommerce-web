@@ -213,8 +213,7 @@ POST /api/payments/create-checkout-session
 
 ---
 
-## 🧪 Testing
-
+## Testing
 * Jest (backend)
 * React Testing Library (frontend)
 * Postman collection (optional)
