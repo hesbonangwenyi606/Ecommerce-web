@@ -24,9 +24,7 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * Dashboard with analytics
 
 ## Tech Stack
-
 ### **Frontend**
-
 * React (Vite or CRA)
 * React Router
 * Axios
