@@ -50,7 +50,7 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 root/
