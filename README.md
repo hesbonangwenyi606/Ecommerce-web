@@ -4,10 +4,8 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 
 ---
 
-## 🚀 Features
-
+## Features
 ### **User Features**
-
 * Create an account and log in (JWT authentication)
 * Browse products with filters and categories
 * View product details and images
@@ -16,7 +14,6 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * View order history and order details
 
 ### **Admin Features**
-
 * Admin login
 * Create, update, delete products
 * Manage inventory
@@ -31,7 +28,6 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * TailwindCSS / Material UI (optional)
 
 ### **Backend**
-
 * Node.js
 * Express.js
 * PostgreSQL (via Prisma or Sequelize or pg)
