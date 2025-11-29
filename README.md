@@ -236,7 +236,7 @@ Include images of homepage, product page, cart, admin dashboard.
 
 ---
 
-## 📄 License
+## License
 MIT License
 
 ## 🙌 Acknowledgements
