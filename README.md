@@ -154,8 +154,6 @@ The backend integrates Stripe for secure payment handling.
 * Accepts card payments
 * Generates Stripe checkout sessions
 
----
-
 ## Deployment
 ### **AWS Deployment Options**
 * **EC2** for Node backend
