@@ -175,8 +175,6 @@ You can also containerize using Docker.
 * Password hashing using bcrypt
 * Protected routes for user and admin
 
----
-
 ## API Endpoints (Sample)
 ### **Auth**
 ```
