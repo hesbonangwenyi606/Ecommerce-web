@@ -223,10 +223,7 @@ POST /api/payments/create-checkout-session
 
 ## 📸 Screenshots (Optional)
 
-Include images of homepage, product page, cart, admin dashboard.
-
----
-
+Include images of homepage, product page, cart
 ## 🤝 Contributing
 1. Fork the repo
 2. Create a new branch
