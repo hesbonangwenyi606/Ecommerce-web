@@ -188,8 +188,6 @@ GET  /api/auth/me
 ```
 
 ### **Products**
-
-```
 GET    /api/products
 GET    /api/products/:id
 POST   /api/products   (admin)
@@ -201,7 +199,6 @@ DELETE /api/products/:id (admin)
 POST /api/orders
 GET  /api/orders/user
 GET  /api/orders/:id
-```
 
 ### **Payments**
 POST /api/payments/create-checkout-session
