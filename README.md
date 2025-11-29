@@ -23,8 +23,6 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * View and manage customer orders
 * Dashboard with analytics
 
----
-
 ## Tech Stack
 
 ### **Frontend**
