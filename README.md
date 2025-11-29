@@ -177,10 +177,8 @@ You can also containerize using Docker.
 
 ---
 
-## 📦 API Endpoints (Sample)
-
+## API Endpoints (Sample)
 ### **Auth**
-
 ```
 POST /api/auth/register
 POST /api/auth/login
