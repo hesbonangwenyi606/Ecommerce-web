@@ -156,10 +156,8 @@ The backend integrates Stripe for secure payment handling.
 
 ---
 
-## ☁️ Deployment
-
+## Deployment
 ### **AWS Deployment Options**
-
 * **EC2** for Node backend
 * **S3 + CloudFront** for React frontend
 * **RDS** for PostgreSQL
@@ -167,7 +165,6 @@ The backend integrates Stripe for secure payment handling.
 
 You can also containerize using Docker.
 
----
 
 ## Authentication
 * JSON Web Tokens (JWT)
