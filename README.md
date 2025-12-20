@@ -36,8 +36,6 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * Docker
 
 ## Project Structure
-
-```
 root/
  ├── client/               # React Frontend
  │   ├── src/
