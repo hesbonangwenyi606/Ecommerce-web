@@ -84,7 +84,6 @@ npm install
 
 **Backend**
 npm run dev
-```
 
 #### **Frontend**
 
