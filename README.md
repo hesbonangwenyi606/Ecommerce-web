@@ -82,7 +82,7 @@ npm install
 
 **Run the project**
 
-#### **Backend**
+**Backend**
 
 ```bash
 npm run dev
