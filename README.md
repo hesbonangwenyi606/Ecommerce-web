@@ -124,7 +124,7 @@ You can also containerize using Docker.
 * Protected routes for user and admin
 
 ## API Endpoints (Sample)
-### **Auth**
+ **Auth**
 ```
 POST /api/auth/register
 POST /api/auth/login
