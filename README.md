@@ -87,7 +87,6 @@ npm run dev
 
 #### **Frontend**
 npm run dev
-```
 
 The app should be live at:
 * **Frontend:** [http://localhost:5173](http://localhost:5173)
