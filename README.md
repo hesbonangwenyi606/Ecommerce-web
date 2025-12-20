@@ -151,7 +151,7 @@ POST /api/payments/create-checkout-session
 * React Testing Library (frontend)
 * Postman collection (optional)
 
-## 🤝 Contributing
+## Contributing
 1. Fork the repo
 2. Create a new branch
 3. Commit your work
@@ -159,8 +159,3 @@ POST /api/payments/create-checkout-session
 
 ## License
 MIT License
-
-## 🙌 Acknowledgements
-* Stripe API
-* AWS Docs
-* React Community
