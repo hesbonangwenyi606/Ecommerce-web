@@ -56,7 +56,6 @@ root/
 **1. Clone the repository**
 git clone https://github.com/your-username/ecommerce-platform.git
 cd ecommerce-platform
-```
 
 **2. Setup environment variables**
 
