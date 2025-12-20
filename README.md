@@ -50,7 +50,7 @@ root/
  ├── database/             # SQL files / migrations
  ├── .env.example
  ├── README.md
- └── docker-compose.yml (optio
+ └── docker-compose.yml 
 
 ## Installation & Setup
 
