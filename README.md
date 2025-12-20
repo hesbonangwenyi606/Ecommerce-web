@@ -80,7 +80,7 @@ cd ../client
 npm install
 
 
-### **4. Run the project**
+**Run the project**
 
 #### **Backend**
 
