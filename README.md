@@ -130,8 +130,7 @@ POST /api/auth/register
 POST /api/auth/login
 GET  /api/auth/me
 ```
-
-### **Products**
+**Products**
 GET    /api/products
 GET    /api/products/:id
 POST   /api/products   (admin)
