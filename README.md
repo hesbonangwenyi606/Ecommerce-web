@@ -85,7 +85,7 @@ npm install
 **Backend**
 npm run dev
 
-#### **Frontend**
+**Frontend**
 npm run dev
 
 The app should be live at:
