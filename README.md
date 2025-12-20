@@ -69,10 +69,9 @@ AWS_S3_BUCKET=your-bucket
 ```
 
 ### **3. Install dependencies**
-
 **Backend**
 
-```bash
+```b
 cd server
 npm install
 ```
