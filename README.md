@@ -76,7 +76,6 @@ npm install
 
 **Frontend**
 
-```bash
 cd ../client
 npm install
 
