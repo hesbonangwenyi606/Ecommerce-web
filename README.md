@@ -79,7 +79,7 @@ npm install
 ```bash
 cd ../client
 npm install
-```
+
 
 ### **4. Run the project**
 
