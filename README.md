@@ -70,7 +70,7 @@ AWS_S3_BUCKET=your-bucket
 
 ### **3. Install dependencies**
 
-#### **Backend**
+**Backend**
 
 ```bash
 cd server
