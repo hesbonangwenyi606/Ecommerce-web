@@ -34,7 +34,7 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 ### **Infrastructure**
 * AWS EC2 / Elastic Beanstalk / S3 for image storage
 * Nginx Reverse Proxy (optional)
-* Docker (optional)
+* Docker (option
 
 ## Project Structure
 
