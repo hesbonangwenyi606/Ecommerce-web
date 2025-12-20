@@ -93,7 +93,7 @@ The app should be live at:
 * **Backend:** [http://localhost:5000](http://localhost:5000)
 
 ## Database
-### **PostgreSQL Schema Includes:**
+**PostgreSQL Schema Includes:**
 * Users
 * Products
 * Categories
