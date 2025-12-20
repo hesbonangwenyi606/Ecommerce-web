@@ -68,7 +68,7 @@ AWS_SECRET_ACCESS_KEY=XXXX
 AWS_S3_BUCKET=your-bucket
 ```
 
-### **3. Install dependencies**
+### Install dependencies**
 **Backend**
 
 cd server
