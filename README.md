@@ -74,7 +74,7 @@ AWS_S3_BUCKET=your-bucket
 cd server
 npm install
 
-#### **Frontend**
+**Frontend**
 
 ```bash
 cd ../client
