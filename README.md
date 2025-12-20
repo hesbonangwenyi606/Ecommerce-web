@@ -32,7 +32,7 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * Stripe API
 
 ### **Infrastructure**
-* AWS EC2 / Elastic Beanstalk / 
+* AWS EC2 / Elastic Beanstalk
 * Nginx Reverse Proxy
 * Docker
 
