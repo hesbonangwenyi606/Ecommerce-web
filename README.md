@@ -58,7 +58,7 @@ git clone https://github.com/your-username/ecommerce-platform.git
 cd ecommerce-platform
 ```
 
-### **2. Setup environment variables**
+**2. Setup environment variables**
 
 Create a `.env` file in the **server** folder:
 
