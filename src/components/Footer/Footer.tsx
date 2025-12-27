@@ -41,16 +41,29 @@ const Footer = () => {
           <div className="text-center sm:text-left">
             <h3 className="font-semibold mb-3">Contact Info</h3>
             <div className="flex flex-col space-y-2 text-gray-400 text-sm">
-              <p className="flex items-center gap-2">
+              <a 
+                href="https://www.google.com/maps/place/Nairobi,+Kenya" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
                 <MapPin size={16} /> Nairobi, Kenya
-              </p>
-              <p className="flex items-center gap-2">
+              </a>
+              <a 
+                href="mailto:info@luxestore.com" 
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
                 <Mail size={16} /> info@luxestore.com
-              </p>
-              <p className="flex items-center gap-2">
+              </a>
+              <a 
+                href="tel:+254743573380" 
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
                 <Phone size={16} /> +254 743 573 380
-              </p>
+              </a>
             </div>
+
+            {/* Social Icons */}
             <div className="flex space-x-4 mt-4 justify-center sm:justify-start">
               <a href="#" className="hover:text-white transition-transform transform hover:scale-110">
                 <Facebook size={22} />
