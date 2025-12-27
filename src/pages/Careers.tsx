@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export const Careers = () => {
@@ -42,10 +42,23 @@ export const Careers = () => {
   ];
 
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const contentRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   const toggleJob = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
+
+  useEffect(() => {
+    contentRefs.current.forEach((el, index) => {
+      if (el) {
+        if (expandedIndex === index) {
+          el.style.maxHeight = el.scrollHeight + "px";
+        } else {
+          el.style.maxHeight = "0px";
+        }
+      }
+    });
+  }, [expandedIndex]);
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-50 p-8">
@@ -56,10 +69,7 @@ export const Careers = () => {
       </p>
 
       {jobs.map((job, index) => (
-        <div
-          key={index}
-          className="bg-white shadow-md rounded-lg w-full max-w-3xl mb-4"
-        >
+        <div key={index} className="bg-white shadow-md rounded-lg w-full max-w-3xl mb-4 overflow-hidden transition-all duration-500">
           <button
             onClick={() => toggleJob(index)}
             className="w-full text-left p-4 flex justify-between items-center focus:outline-none"
@@ -71,8 +81,11 @@ export const Careers = () => {
             <span className="text-xl">{expandedIndex === index ? "−" : "+"}</span>
           </button>
 
-          {expandedIndex === index && (
-            <div className="px-6 pb-4 space-y-4">
+          <div
+            ref={(el) => (contentRefs.current[index] = el)}
+            className="px-6 pb-4 transition-max-height duration-500 ease-in-out overflow-hidden max-h-0"
+          >
+            <div className="space-y-4">
               <div>
                 <h3 className="font-semibold mb-1">Who We Are Looking For:</h3>
                 <p>{job.lookingFor}</p>
@@ -107,7 +120,7 @@ export const Careers = () => {
                 </a>
               </div>
             </div>
-          )}
+          </div>
         </div>
       ))}
 
