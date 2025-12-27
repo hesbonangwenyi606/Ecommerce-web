@@ -63,7 +63,7 @@ export const Careers = () => {
         </ul>
         <p><strong>Education:</strong> Bachelor’s degree in Design, Human-Computer Interaction (HCI), or a related field</p>
         <p><strong>Skills:</strong> Figma, Adobe XD, Wireframing, Prototyping, User research, Responsive design, Accessibility</p>
-        <p><strong>Where to Apply:</strong> 📧 <a href="mailto:careers@luxestore.com" className="text-blue-600 hover:underline">Apply Now</a></p>
+        <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
       </section>
 
       {/* Marketing Specialist */}
@@ -82,7 +82,7 @@ export const Careers = () => {
         </ul>
         <p><strong>Education:</strong> Bachelor’s degree in Marketing, Business, Communications, or related field</p>
         <p><strong>Skills:</strong> SEO, Content Marketing, Social Media Marketing, Analytics, Campaign Management, Email Marketing, Data Analysis</p>
-        <p><strong>Where to Apply:</strong> 📧 <a href="mailto:careers@luxestore.com" className="text-blue-600 hover:underline">Apply Now</a></p>
+        <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
       </section>
     </div>
   );
