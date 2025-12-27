@@ -4,7 +4,7 @@ import { ProductCard } from './ProductCard';
 import { SearchBar } from './SearchBar';
 import { ShoppingCart as Cart } from './ShoppingCart';
 import { QuickViewModal } from './QuickViewModal';
-import Footer from './components/Footer/Footer'; // <-- import footer
+import Footer from './Footer/Footer'; // ✅ Corrected import
 
 const products = [
   // ... your products array
