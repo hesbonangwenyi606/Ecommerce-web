@@ -25,7 +25,7 @@ export const Careers = () => {
         </ul>
         <p><strong>Education:</strong> Bachelor’s degree in Computer Science, Software Engineering, or a related field</p>
         <p><strong>Skills:</strong> React, TypeScript, Tailwind CSS, HTML/CSS, JavaScript, UI/UX awareness</p>
-        <p><strong>Where to Apply:</strong> 📧 <a href="mailto:careers@luxestore.com" className="text-blue-600 hover:underline">Apply Now</a></p>
+        <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com.com" className="text-blue-600 hover:underline">Apply Now</a></p>
       </section>
 
       {/* Backend Developer */}
