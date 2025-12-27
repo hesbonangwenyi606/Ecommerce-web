@@ -13,6 +13,12 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 
+// Import the new full-page components
+import { AboutUs } from "./pages/AboutUs";
+import { Contact } from "./pages/Contact";
+import { Careers } from "./pages/Careers";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -34,6 +40,13 @@ const App = () => (
                 </ProtectedRoute>
               }
             />
+            
+            {/* Full-page footer routes */}
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
@@ -43,4 +56,3 @@ const App = () => (
 );
 
 export default App;
-
