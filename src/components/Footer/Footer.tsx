@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { Contact } from './Contact';
 import { Careers } from './Careers';
 import { PrivacyPolicy } from './PrivacyPolicy';
-import { MapPin, Mail, Phone } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const Footer = () => {
+  // State for toggling each section
   const [showContact, setShowContact] = useState(false);
   const [showCareers, setShowCareers] = useState(false);
   const [showPrivacy, setShowPrivacy] = useState(false);
@@ -12,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-gray-200 py-8 mt-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-between items-start md:space-x-8 space-y-6 md:space-y-0">
 
           {/* Logo & Description */}
           <div className="text-center md:text-left">
@@ -23,7 +24,7 @@ const Footer = () => {
           </div>
 
           {/* Shop Links */}
-          <div className="flex flex-col space-y-2 text-center md:text-left">
+          <div className="flex flex-col space-y-2">
             <h3 className="font-semibold mb-2">Shop</h3>
             <a href="#" className="hover:text-white transition-colors">Watches</a>
             <a href="#" className="hover:text-white transition-colors">Bags</a>
@@ -32,44 +33,37 @@ const Footer = () => {
           </div>
 
           {/* Company Links */}
-          <div className="flex flex-col space-y-2 text-center md:text-left">
+          <div className="flex flex-col space-y-2">
             <h3 className="font-semibold mb-2">Company</h3>
+            <button
+              onClick={() => setShowContact(!showContact)}
+              className="flex items-center justify-between w-full text-left hover:text-white transition-colors"
+            >
+              Contact <ChevronDown className={`ml-2 transition-transform ${showContact ? 'rotate-180' : ''}`} />
+            </button>
+            {showContact && <Contact />}
 
             <button
-              className="hover:text-white transition-colors text-left"
-              onClick={() => setShowContact(prev => !prev)}
+              onClick={() => setShowCareers(!showCareers)}
+              className="flex items-center justify-between w-full text-left hover:text-white transition-colors"
             >
-              Contact
+              Careers <ChevronDown className={`ml-2 transition-transform ${showCareers ? 'rotate-180' : ''}`} />
             </button>
-            <div className={`overflow-hidden transition-all duration-300 ${showContact ? 'max-h-40 mt-2' : 'max-h-0'}`}>
-              <Contact />
-            </div>
+            {showCareers && <Careers />}
 
             <button
-              className="hover:text-white transition-colors text-left"
-              onClick={() => setShowCareers(prev => !prev)}
+              onClick={() => setShowPrivacy(!showPrivacy)}
+              className="flex items-center justify-between w-full text-left hover:text-white transition-colors"
             >
-              Careers
+              Privacy Policy <ChevronDown className={`ml-2 transition-transform ${showPrivacy ? 'rotate-180' : ''}`} />
             </button>
-            <div className={`overflow-hidden transition-all duration-300 ${showCareers ? 'max-h-40 mt-2' : 'max-h-0'}`}>
-              <Careers />
-            </div>
-
-            <button
-              className="hover:text-white transition-colors text-left"
-              onClick={() => setShowPrivacy(prev => !prev)}
-            >
-              Privacy Policy
-            </button>
-            <div className={`overflow-hidden transition-all duration-300 ${showPrivacy ? 'max-h-40 mt-2' : 'max-h-0'}`}>
-              <PrivacyPolicy />
-            </div>
+            {showPrivacy && <PrivacyPolicy />}
           </div>
 
           {/* Social Media */}
-          <div className="flex flex-col space-y-2 text-center md:text-left">
+          <div className="flex flex-col space-y-2">
             <h3 className="font-semibold mb-2">Follow Us</h3>
-            <div className="flex space-x-3 justify-center md:justify-start">
+            <div className="flex space-x-3">
               <a href="#" className="hover:text-white transition-colors">Facebook</a>
               <a href="#" className="hover:text-white transition-colors">Instagram</a>
               <a href="#" className="hover:text-white transition-colors">Twitter</a>
