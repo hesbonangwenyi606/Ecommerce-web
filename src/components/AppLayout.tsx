@@ -4,7 +4,8 @@ import { ProductCard } from './ProductCard';
 import { SearchBar } from './SearchBar';
 import { ShoppingCart as Cart } from './ShoppingCart';
 import { QuickViewModal } from './QuickViewModal';
-import Footer from './Footer/Footer'; // <-- correct path
+import Footer from './Footer/Footer';
+import { AboutUs } from './AboutUs';
 
 const products = [
   { id: 1, name: 'Luxury Gold Watch', price: 299, originalPrice: 399, image: 'https://d64gsuwffb70l.cloudfront.net/68d56dfd76de577fdbec85c4_1758817832214_0448ef70.webp', rating: 4.8, reviews: 124, category: 'Watches' },
@@ -22,7 +23,7 @@ const products = [
   { id: 13, name: 'Round Sunglasses', price: 89, image: 'https://d64gsuwffb70l.cloudfront.net/68d56dfd76de577fdbec85c4_1758817853521_42890c9b.webp', rating: 4.3, reviews: 124, category: 'Accessories' },
   { id: 14, name: 'Woody Cologne', price: 109, image: 'https://d64gsuwffb70l.cloudfront.net/68d56dfd76de577fdbec85c4_1758817863005_da222a63.webp', rating: 4.7, reviews: 156, category: 'Fragrance' },
   { id: 15, name: 'Diamond Ring', price: 599, originalPrice: 799, image: 'https://d64gsuwffb70l.cloudfront.net/68d56dfd76de577fdbec85c4_1758817872131_a3aead10.webp', rating: 4.9, reviews: 45, category: 'Jewelry' },
-  { id: 16, name: 'Vintage Watch', price: 449, image: 'https://d64gsuwffb70l.cloudfront.net/68d56dfd76de577fdbec85c4_1758817838060_9f618edb.webp', rating: 4.8, reviews: 89, category: 'Watches' },
+  { id: 16, name: 'Vintage Watch', price: 449, image: 'https://d64gsuwffb70l.cloudfront.net/68d56dfd76de577fdbec85c4_1758817838060_9f618edb.webp', rating: 4.8, reviews: 89, category: 'Watches' }
 ];
 
 export const AppLayout = () => {
@@ -77,11 +78,9 @@ export const AppLayout = () => {
 
   const cartItemCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
-  // Sale Items (products with originalPrice > price)
-  const saleItems = products.filter(p => p.originalPrice && p.originalPrice > p.price);
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -107,14 +106,14 @@ export const AppLayout = () => {
       {/* Hero */}
       <section className="relative h-96 bg-gradient-to-r from-blue-900 to-blue-700 mb-8">
         <div className="absolute inset-0">
-          <img
+          <img 
             src="https://d64gsuwffb70l.cloudfront.net/68d56dfd76de577fdbec85c4_1758817828511_1840787e.webp"
             alt="Hero"
             className="w-full h-full object-cover opacity-30"
           />
         </div>
-        <div className="relative h-full flex items-center justify-center">
-          <div className="text-white text-center">
+        <div className="relative h-full flex items-center">
+          <div className="text-white">
             <h2 className="text-5xl font-bold mb-4">Luxury Collection</h2>
             <p className="text-xl mb-8">Discover premium products crafted for excellence</p>
             <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
@@ -124,29 +123,9 @@ export const AppLayout = () => {
         </div>
       </section>
 
+      {/* Search and Products */}
       <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <SearchBar onSearch={setSearchQuery} onFilter={setFilters} categories={categories} />
-
-        {/* Sale Items Section */}
-        {saleItems.length > 0 && (
-          <section className="mb-8">
-            <h3 className="text-2xl font-bold mb-4">🔥 On Sale</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {saleItems.map(product => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                  onAddToCart={addToCart}
-                  onToggleWishlist={toggleWishlist}
-                  onQuickView={setQuickViewProduct}
-                  isWishlisted={wishlist.has(product.id)}
-                />
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* All Products */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
           {filteredProducts.map(product => (
             <ProductCard
@@ -160,6 +139,9 @@ export const AppLayout = () => {
           ))}
         </div>
       </main>
+
+      {/* About Us Section */}
+      <AboutUs />
 
       {/* Cart and QuickView */}
       <Cart
