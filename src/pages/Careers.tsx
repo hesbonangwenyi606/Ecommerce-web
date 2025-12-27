@@ -5,6 +5,7 @@ export const Careers = () => {
   const jobs = [
     {
       title: "Frontend Developer",
+      openings: 2,
       skills: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
       duties: [
         "Develop and maintain web interfaces",
@@ -14,6 +15,7 @@ export const Careers = () => {
     },
     {
       title: "Backend Developer",
+      openings: 1,
       skills: ["Node.js", "Express", "PostgreSQL", "REST APIs"],
       duties: [
         "Develop server-side logic",
@@ -23,6 +25,7 @@ export const Careers = () => {
     },
     {
       title: "UI/UX Designer",
+      openings: 1,
       skills: ["Figma", "Adobe XD", "Prototyping", "User Research"],
       duties: [
         "Design user-friendly interfaces",
@@ -32,6 +35,7 @@ export const Careers = () => {
     },
     {
       title: "Digital Marketing Specialist",
+      openings: 1,
       skills: ["SEO", "Content Marketing", "Social Media Management", "Google Analytics"],
       duties: [
         "Plan and execute marketing campaigns",
@@ -49,7 +53,10 @@ export const Careers = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-50 p-8">
-      <h1 className="text-4xl font-bold mb-6">Careers at LuxeStore</h1>
+      {/* Top description */}
+      <p className="max-w-3xl text-center text-lg text-gray-700 mb-6">
+        Thank you for choosing LuxeStore. We are currently having 4 job openings. Click on each job below to see detailed descriptions, required skills, and duties.
+      </p>
 
       {jobs.map((job, index) => (
         <div
@@ -61,7 +68,10 @@ export const Careers = () => {
             onClick={() => toggleJob(index)}
             className="w-full text-left p-4 flex justify-between items-center focus:outline-none"
           >
-            <h2 className="text-2xl font-semibold">{job.title}</h2>
+            <div>
+              <h2 className="text-2xl font-semibold">{job.title}</h2>
+              <p className="text-gray-500 text-sm">{job.openings} position{job.openings > 1 ? "s" : ""} available</p>
+            </div>
             <span className="text-xl">{expandedIndex === index ? "−" : "+"}</span>
           </button>
 
