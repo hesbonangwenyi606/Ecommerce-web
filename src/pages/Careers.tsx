@@ -6,42 +6,38 @@ export const Careers = () => {
     {
       title: "Frontend Developer",
       openings: 2,
+      lookingFor: "We are looking for a passionate Frontend Developer to build amazing web experiences.",
+      description: "Develop, maintain, and optimize our web applications using React and TypeScript.",
+      requirements: ["3+ years of frontend development experience", "Strong knowledge of React", "Experience with Tailwind CSS"],
       skills: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
-      duties: [
-        "Develop and maintain web interfaces",
-        "Collaborate with UI/UX designers",
-        "Optimize applications for performance",
-      ],
+      applyLink: "mailto:careers@luxestore.com?subject=Frontend Developer Application",
     },
     {
       title: "Backend Developer",
       openings: 1,
+      lookingFor: "Seeking a skilled Backend Developer to design and implement server-side logic.",
+      description: "Develop APIs, manage databases, and ensure high performance and scalability.",
+      requirements: ["3+ years experience with Node.js", "Knowledge of PostgreSQL", "Familiarity with REST APIs"],
       skills: ["Node.js", "Express", "PostgreSQL", "REST APIs"],
-      duties: [
-        "Develop server-side logic",
-        "Design database schemas",
-        "Integrate APIs and third-party services",
-      ],
+      applyLink: "mailto:careers@luxestore.com?subject=Backend Developer Application",
     },
     {
       title: "UI/UX Designer",
       openings: 1,
+      lookingFor: "Looking for a creative UI/UX Designer to craft intuitive and beautiful interfaces.",
+      description: "Design wireframes, prototypes, and collaborate closely with developers.",
+      requirements: ["Proficient in Figma or Adobe XD", "Strong understanding of UX principles"],
       skills: ["Figma", "Adobe XD", "Prototyping", "User Research"],
-      duties: [
-        "Design user-friendly interfaces",
-        "Create wireframes and prototypes",
-        "Collaborate with developers for implementation",
-      ],
+      applyLink: "mailto:careers@luxestore.com?subject=UI/UX Designer Application",
     },
     {
       title: "Digital Marketing Specialist",
       openings: 1,
+      lookingFor: "We are seeking a Digital Marketing Specialist to drive online growth and engagement.",
+      description: "Plan and execute marketing campaigns, SEO, social media, and analyze performance metrics.",
+      requirements: ["Experience in digital marketing", "Strong analytical skills", "Knowledge of SEO tools"],
       skills: ["SEO", "Content Marketing", "Social Media Management", "Google Analytics"],
-      duties: [
-        "Plan and execute marketing campaigns",
-        "Optimize website content for SEO",
-        "Analyze marketing data and metrics",
-      ],
+      applyLink: "mailto:careers@luxestore.com?subject=Digital Marketing Application",
     },
   ];
 
@@ -53,9 +49,12 @@ export const Careers = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-50 p-8">
+      {/* Page Title */}
+      <h1 className="text-4xl font-bold mb-4">Careers at LuxeStore</h1>
+
       {/* Top description */}
       <p className="max-w-3xl text-center text-lg text-gray-700 mb-6">
-        Thank you for choosing LuxeStore. We are currently having 4 job openings. Click on each job below to see detailed descriptions, required skills, and duties.
+        Thank you for choosing LuxeStore. We are currently having 4 job openings. Click on each job below to see detailed descriptions, requirements, skills, and where to apply.
       </p>
 
       {jobs.map((job, index) => (
@@ -77,25 +76,36 @@ export const Careers = () => {
 
           {/* Collapsible content */}
           {expandedIndex === index && (
-            <div className="px-6 pb-4">
-              {/* Skills/Requirements */}
-              <div className="mb-4">
-                <h3 className="font-semibold mb-2">Skills / Requirements:</h3>
+            <div className="px-6 pb-4 space-y-4">
+              <div>
+                <h3 className="font-semibold mb-1">Who We Are Looking For:</h3>
+                <p>{job.lookingFor}</p>
+              </div>
+              <div>
+                <h3 className="font-semibold mb-1">Job Description:</h3>
+                <p>{job.description}</p>
+              </div>
+              <div>
+                <h3 className="font-semibold mb-1">Requirements:</h3>
+                <ul className="list-disc list-inside">
+                  {job.requirements.map((req, i) => (
+                    <li key={i}>{req}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold mb-1">Skills:</h3>
                 <ul className="list-disc list-inside">
                   {job.skills.map((skill, i) => (
                     <li key={i}>{skill}</li>
                   ))}
                 </ul>
               </div>
-
-              {/* Duties */}
               <div>
-                <h3 className="font-semibold mb-2">Duties:</h3>
-                <ul className="list-disc list-inside">
-                  {job.duties.map((duty, i) => (
-                    <li key={i}>{duty}</li>
-                  ))}
-                </ul>
+                <h3 className="font-semibold mb-1">Where to Apply:</h3>
+                <a href={job.applyLink} className="text-blue-600 hover:underline">
+                  Apply here
+                </a>
               </div>
             </div>
           )}
