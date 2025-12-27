@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Careers = () => {
   return (
@@ -25,7 +26,10 @@ export const Careers = () => {
         </ul>
         <p><strong>Education:</strong> Bachelor’s degree in Computer Science, Software Engineering, or a related field</p>
         <p><strong>Skills:</strong> React, TypeScript, Tailwind CSS, HTML/CSS, JavaScript, UI/UX awareness</p>
-        <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com.com" className="text-blue-600 hover:underline">Apply Now</a></p>
+        <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
+        <Link to="/" className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+          Back to Home
+        </Link>
       </section>
 
       {/* Backend Developer */}
@@ -45,6 +49,9 @@ export const Careers = () => {
         <p><strong>Education:</strong> Bachelor’s degree in Computer Science, Information Systems, or related field</p>
         <p><strong>Skills:</strong> Node.js, Express, PostgreSQL/MySQL, API design, JWT Authentication, Cloud services, CI/CD</p>
         <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
+        <Link to="/" className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+          Back to Home
+        </Link>
       </section>
 
       {/* UI/UX Designer */}
@@ -64,6 +71,9 @@ export const Careers = () => {
         <p><strong>Education:</strong> Bachelor’s degree in Design, Human-Computer Interaction (HCI), or a related field</p>
         <p><strong>Skills:</strong> Figma, Adobe XD, Wireframing, Prototyping, User research, Responsive design, Accessibility</p>
         <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
+        <Link to="/" className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+          Back to Home
+        </Link>
       </section>
 
       {/* Marketing Specialist */}
@@ -83,6 +93,9 @@ export const Careers = () => {
         <p><strong>Education:</strong> Bachelor’s degree in Marketing, Business, Communications, or related field</p>
         <p><strong>Skills:</strong> SEO, Content Marketing, Social Media Marketing, Analytics, Campaign Management, Email Marketing, Data Analysis</p>
         <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
+        <Link to="/" className="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+          Back to Home
+        </Link>
       </section>
     </div>
   );
