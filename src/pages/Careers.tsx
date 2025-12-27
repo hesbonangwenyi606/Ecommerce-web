@@ -86,10 +86,12 @@ const jobs: Job[] = [
 ];
 
 export const Careers = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndexes, setOpenIndexes] = useState<number[]>([]);
 
   const toggleJob = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndexes(prev =>
+      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    );
   };
 
   return (
@@ -107,9 +109,9 @@ export const Careers = () => {
             onClick={() => toggleJob(index)}
           >
             {job.title} ({job.positions} Position{job.positions > 1 ? "s" : ""})
-            <span>{openIndex === index ? "▲" : "▼"}</span>
+            <span>{openIndexes.includes(index) ? "▲" : "▼"}</span>
           </button>
-          {openIndex === index && (
+          {openIndexes.includes(index) && (
             <div className="px-6 pb-6">
               <p className="mb-2"><strong>Who we are looking for:</strong> {job.who}</p>
               <p className="mb-2"><strong>Job Description:</strong> {job.description}</p>
