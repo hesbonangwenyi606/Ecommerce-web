@@ -15,6 +15,7 @@ export const Careers = () => {
         <h2 className="text-2xl font-semibold mb-2">Frontend Developer (1 Position)</h2>
         <p className="mb-2"><strong>Who we are looking for:</strong> A highly motivated frontend developer passionate about building fast, responsive, and accessible web applications.</p>
         <p className="mb-2"><strong>Job Description:</strong> Develop and maintain interactive, responsive, and user-friendly web applications. Collaborate with designers and backend developers. Optimize applications for speed and scalability.</p>
+        <p className="mb-2"><strong>Requirements:</strong></p>
         <ul className="list-disc pl-5 mb-2">
           <li>2+ years experience with React, Next.js, or similar frameworks</li>
           <li>Experience with state management tools like Redux or Context API</li>
@@ -23,9 +24,9 @@ export const Careers = () => {
           <li>Knowledge of responsive design and cross-browser compatibility</li>
           <li>Experience with Git and version control</li>
           <li>Understanding of accessibility (WCAG) and SEO best practices</li>
+          <li><strong>Education:</strong> Bachelor’s degree in Computer Science, Software Engineering, or a related field</li>
+          <li><strong>Skills:</strong> React, TypeScript, Tailwind CSS, HTML/CSS, JavaScript, UI/UX awareness</li>
         </ul>
-        <p><strong>Education:</strong> Bachelor’s degree in Computer Science, Software Engineering, or a related field</p>
-        <p><strong>Skills:</strong> React, TypeScript, Tailwind CSS, HTML/CSS, JavaScript, UI/UX awareness</p>
         <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
       </section>
 
@@ -34,6 +35,7 @@ export const Careers = () => {
         <h2 className="text-2xl font-semibold mb-2">Backend Developer (1 Position)</h2>
         <p className="mb-2"><strong>Who we are looking for:</strong> A results-driven backend developer with experience building scalable APIs and handling database architectures for e-commerce platforms.</p>
         <p className="mb-2"><strong>Job Description:</strong> Design and implement robust backend solutions using Node.js and Express. Build and maintain RESTful APIs. Ensure application security, data protection, and system reliability.</p>
+        <p className="mb-2"><strong>Requirements:</strong></p>
         <ul className="list-disc pl-5 mb-2">
           <li>3+ years experience with Node.js, Express, and database systems (PostgreSQL, MySQL)</li>
           <li>Experience designing RESTful APIs and understanding of authentication/authorization</li>
@@ -42,9 +44,9 @@ export const Careers = () => {
           <li>Understanding of caching, queues, and microservices architecture</li>
           <li>Strong debugging, problem-solving, and optimization skills</li>
           <li>Experience with CI/CD pipelines and automated testing frameworks</li>
+          <li><strong>Education:</strong> Bachelor’s degree in Computer Science, Information Systems, or related field</li>
+          <li><strong>Skills:</strong> Node.js, Express, PostgreSQL/MySQL, API design, JWT Authentication, Cloud services, CI/CD</li>
         </ul>
-        <p><strong>Education:</strong> Bachelor’s degree in Computer Science, Information Systems, or related field</p>
-        <p><strong>Skills:</strong> Node.js, Express, PostgreSQL/MySQL, API design, JWT Authentication, Cloud services, CI/CD</p>
         <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
       </section>
 
@@ -53,6 +55,7 @@ export const Careers = () => {
         <h2 className="text-2xl font-semibold mb-2">UI/UX Designer (1 Position)</h2>
         <p className="mb-2"><strong>Who we are looking for:</strong> A creative and detail-oriented designer to craft seamless, intuitive, and visually appealing experiences for our users.</p>
         <p className="mb-2"><strong>Job Description:</strong> Design user interfaces for web and mobile applications. Create wireframes, mockups, and interactive prototypes. Conduct user research and usability testing. Collaborate with developers.</p>
+        <p className="mb-2"><strong>Requirements:</strong></p>
         <ul className="list-disc pl-5 mb-2">
           <li>Portfolio demonstrating expertise in UI/UX design</li>
           <li>Proficiency with Figma, Sketch, or Adobe XD</li>
@@ -61,9 +64,9 @@ export const Careers = () => {
           <li>Strong understanding of design systems and component libraries</li>
           <li>Ability to work in an agile development environment</li>
           <li>Excellent communication and collaboration skills</li>
+          <li><strong>Education:</strong> Bachelor’s degree in Design, Human-Computer Interaction (HCI), or a related field</li>
+          <li><strong>Skills:</strong> Figma, Adobe XD, Wireframing, Prototyping, User research, Responsive design, Accessibility</li>
         </ul>
-        <p><strong>Education:</strong> Bachelor’s degree in Design, Human-Computer Interaction (HCI), or a related field</p>
-        <p><strong>Skills:</strong> Figma, Adobe XD, Wireframing, Prototyping, User research, Responsive design, Accessibility</p>
         <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
       </section>
 
@@ -72,6 +75,7 @@ export const Careers = () => {
         <h2 className="text-2xl font-semibold mb-2">Marketing Specialist (1 Position)</h2>
         <p className="mb-2"><strong>Who we are looking for:</strong> A strategic marketing professional with experience in e-commerce marketing, social media campaigns, and brand development.</p>
         <p className="mb-2"><strong>Job Description:</strong> Plan, execute, and monitor digital marketing campaigns across social media, email, and search engines. Analyze marketing data to provide insights. Collaborate with design and content teams.</p>
+        <p className="mb-2"><strong>Requirements:</strong></p>
         <ul className="list-disc pl-5 mb-2">
           <li>2+ years experience in digital marketing or social media management</li>
           <li>Strong understanding of SEO, SEM, and analytics tools</li>
@@ -80,9 +84,9 @@ export const Careers = () => {
           <li>Excellent written and verbal communication skills</li>
           <li>Creativity and attention to detail for content creation</li>
           <li>Ability to analyze campaign performance and adjust strategies accordingly</li>
+          <li><strong>Education:</strong> Bachelor’s degree in Marketing, Business, Communications, or related field</li>
+          <li><strong>Skills:</strong> SEO, Content Marketing, Social Media Marketing, Analytics, Campaign Management, Email Marketing, Data Analysis</li>
         </ul>
-        <p><strong>Education:</strong> Bachelor’s degree in Marketing, Business, Communications, or related field</p>
-        <p><strong>Skills:</strong> SEO, Content Marketing, Social Media Marketing, Analytics, Campaign Management, Email Marketing, Data Analysis</p>
         <p><strong>Where to Apply:</strong> 📧 <a href="mailto:hesbonmanyinsa96@gmail.com" className="text-blue-600 hover:underline">Apply Now</a></p>
       </section>
 
