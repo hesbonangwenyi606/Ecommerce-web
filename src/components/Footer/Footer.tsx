@@ -41,8 +41,8 @@ const Footer = () => {
           <div className="text-center sm:text-left">
             <h3 className="font-semibold mb-3">Contact Info</h3>
             <div className="flex flex-col space-y-2 text-gray-400 text-sm">
-              <p>📍 Nairobi, Kenya</p>
-              <p>📧 hesbonmanyinsa96@gmail.com</p>
+              <p>. Nairobi, Kenya</p>
+              <p>📧 infor@luxury.com</p>
               <p>📞 +254 743 573 380</p>
             </div>
             <div className="flex space-x-4 mt-4 justify-center sm:justify-start">
