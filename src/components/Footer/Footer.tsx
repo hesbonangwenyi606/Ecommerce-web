@@ -1,4 +1,5 @@
 import React from 'react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -39,11 +40,17 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">📧 hesbonmanyinsa96@gmail.com</p>
             <p className="text-gray-400 text-sm">📞 +254 743 573 380</p>
 
-            {/* Social Media */}
+            {/* Social Media with Icons */}
             <div className="flex space-x-3 mt-2 justify-center md:justify-start">
-              <a href="#" className="hover:text-white transition-colors">Facebook</a>
-              <a href="#" className="hover:text-white transition-colors">Instagram</a>
-              <a href="#" className="hover:text-white transition-colors">Twitter</a>
+              <a href="#" className="hover:text-white transition-colors">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                <Instagram size={20} />
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                <Twitter size={20} />
+              </a>
             </div>
           </div>
 
