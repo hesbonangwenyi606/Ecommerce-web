@@ -9,9 +9,12 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="text-center md:text-left">
             <h1 className="text-2xl font-bold text-yellow-500 mb-2">LuxeStore</h1>
-            <p className="text-gray-400 max-w-xs">
+            <p className="text-gray-400 max-w-xs mb-2">
               Discover luxury products crafted with excellence. Shop exclusive items and enjoy premium experiences.
             </p>
+            <p className="text-gray-400 text-sm">📍 Nairobi, Kenya</p>
+            <p className="text-gray-400 text-sm">📧 hesbonmanyinsa96@gmail.com</p>
+            <p className="text-gray-400 text-sm">📞 +254 743 573 380</p>
           </div>
 
           {/* Links */}
