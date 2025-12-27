@@ -4,20 +4,17 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-gray-200 py-8 mt-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
-          
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+
           {/* Logo & Description */}
           <div className="text-center md:text-left">
             <h1 className="text-2xl font-bold text-yellow-500 mb-2">LuxeStore</h1>
-            <p className="text-gray-400 max-w-xs mb-2">
+            <p className="text-gray-400 max-w-xs">
               Discover luxury products crafted with excellence. Shop exclusive items and enjoy premium experiences.
             </p>
-            <p className="text-gray-400 text-sm">📍 Nairobi, Kenya</p>
-            <p className="text-gray-400 text-sm">📧 hesbonmanyinsa96@gmail.com</p>
-            <p className="text-gray-400 text-sm">📞 +254 743 573 380</p>
           </div>
 
-          {/* Links */}
+          {/* Shop Links */}
           <div className="flex flex-col space-y-2 text-center md:text-left">
             <h3 className="font-semibold mb-2">Shop</h3>
             <a href="#" className="hover:text-white transition-colors">Watches</a>
@@ -26,6 +23,7 @@ const Footer = () => {
             <a href="#" className="hover:text-white transition-colors">Fragrance</a>
           </div>
 
+          {/* Company Links */}
           <div className="flex flex-col space-y-2 text-center md:text-left">
             <h3 className="font-semibold mb-2">Company</h3>
             <a href="#" className="hover:text-white transition-colors">About Us</a>
@@ -34,10 +32,15 @@ const Footer = () => {
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
 
-          {/* Social Media */}
+          {/* Contact Info (last column) */}
           <div className="flex flex-col space-y-2 text-center md:text-left">
-            <h3 className="font-semibold mb-2">Follow Us</h3>
-            <div className="flex space-x-3 justify-center md:justify-start">
+            <h3 className="font-semibold mb-2">Contact Info</h3>
+            <p className="text-gray-400 text-sm">📍 Nairobi, Kenya</p>
+            <p className="text-gray-400 text-sm">📧 hesbonmanyinsa96@gmail.com</p>
+            <p className="text-gray-400 text-sm">📞 +254 743 573 380</p>
+
+            {/* Social Media */}
+            <div className="flex space-x-3 mt-2 justify-center md:justify-start">
               <a href="#" className="hover:text-white transition-colors">Facebook</a>
               <a href="#" className="hover:text-white transition-colors">Instagram</a>
               <a href="#" className="hover:text-white transition-colors">Twitter</a>
