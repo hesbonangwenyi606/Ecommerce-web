@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Twitter, MapPin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -41,9 +41,15 @@ const Footer = () => {
           <div className="text-center sm:text-left">
             <h3 className="font-semibold mb-3">Contact Info</h3>
             <div className="flex flex-col space-y-2 text-gray-400 text-sm">
-              <p>. Nairobi, Kenya</p>
-              <p>📧 infor@luxury.com</p>
-              <p>📞 +254 743 573 380</p>
+              <p className="flex items-center gap-2">
+                <MapPin size={16} /> Nairobi, Kenya
+              </p>
+              <p className="flex items-center gap-2">
+                <Mail size={16} /> info@luxestore.com
+              </p>
+              <p className="flex items-center gap-2">
+                <Phone size={16} /> +254 743 573 380
+              </p>
             </div>
             <div className="flex space-x-4 mt-4 justify-center sm:justify-start">
               <a href="#" className="hover:text-white transition-transform transform hover:scale-110">
