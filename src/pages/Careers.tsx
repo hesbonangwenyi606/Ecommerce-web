@@ -49,10 +49,8 @@ export const Careers = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-50 p-8">
-      {/* Page Title */}
       <h1 className="text-4xl font-bold mb-4">Careers at LuxeStore</h1>
 
-      {/* Top description */}
       <p className="max-w-3xl text-center text-lg text-gray-700 mb-6">
         Thank you for choosing LuxeStore. We are currently having 4 job openings. Click on each job below to see detailed descriptions, requirements, skills, and where to apply.
       </p>
@@ -62,7 +60,6 @@ export const Careers = () => {
           key={index}
           className="bg-white shadow-md rounded-lg w-full max-w-3xl mb-4"
         >
-          {/* Job Title */}
           <button
             onClick={() => toggleJob(index)}
             className="w-full text-left p-4 flex justify-between items-center focus:outline-none"
@@ -74,7 +71,6 @@ export const Careers = () => {
             <span className="text-xl">{expandedIndex === index ? "−" : "+"}</span>
           </button>
 
-          {/* Collapsible content */}
           {expandedIndex === index && (
             <div className="px-6 pb-4 space-y-4">
               <div>
@@ -103,8 +99,11 @@ export const Careers = () => {
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Where to Apply:</h3>
-                <a href={job.applyLink} className="text-blue-600 hover:underline">
-                  Apply here
+                <a
+                  href={job.applyLink}
+                  className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+                >
+                  <span className="mr-2">📧</span> Apply Now
                 </a>
               </div>
             </div>
