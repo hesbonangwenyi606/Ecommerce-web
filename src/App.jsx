@@ -6,9 +6,11 @@ import Success from "./Success";
 import Cancel from "./Cancel";
 
 // Stripe
-const stripePromise = loadStripe("pk_test_51SjympDqRz3Qo8jLrCKM05BhseWrTvFzP8MdY1rwEPcK1a1jtCMtC3gbBP4M56aVKvwZl2HyMpXj9S9HRCwJNllO000vtqOHww");
+const stripePromise = loadStripe(
+  "pk_test_51SjympDqRz3Qo8jLrCKM05BhseWrTvFzP8MdY1rwEPcK1a1jtCMtC3gbBP4M56aVKvwZl2HyMpXj9S9HRCwJNllO000vtqOHww"
+);
 
-// Home Component
+// Home Component (Protected)
 function Home({ user }) {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
@@ -29,7 +31,6 @@ function Home({ user }) {
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
   const handleCheckout = async () => {
-    if (!user) return alert("Please login to checkout!");
     if (!cart.length) return alert("Cart is empty");
 
     try {
@@ -45,11 +46,16 @@ function Home({ user }) {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    window.location.reload();
+  };
+
   return (
     <div style={{ padding: "20px" }}>
       <header style={{ marginBottom: "20px", borderBottom: "1px solid #ccc", paddingBottom: "10px" }}>
         <h1>LuxeStore</h1>
-        <p>Welcome, {user.email}</p>
+        <p>Welcome, {user.email} | <button onClick={handleLogout}>Logout</button></p>
       </header>
 
       <h2>Products</h2>
@@ -90,7 +96,7 @@ function Login({ setUser }) {
       const res = await loginUser({ email, password });
       localStorage.setItem("token", res.data.token);
       setUser(res.data);
-      navigate("/"); // redirect to Home
+      navigate("/"); // go to Home
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");
     }
@@ -150,13 +156,21 @@ function Signup() {
 // Main App
 function App() {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      getCurrentUser(token).then(res => setUser(res.data)).catch(() => setUser(null));
+      getCurrentUser()
+        .then(res => setUser(res.data))
+        .catch(() => setUser(null))
+        .finally(() => setLoading(false));
+    } else {
+      setLoading(false);
     }
   }, []);
+
+  if (loading) return <p>Loading...</p>;
 
   return (
     <Router>
