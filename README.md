@@ -7,7 +7,6 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * Create, update, delete products
 * Manage inventory
 * View and manage customer orders
-* Dashboard with analytics
 
 ## Tech Stack
 ### **Frontend**
