@@ -116,7 +116,7 @@ The backend integrates Stripe for secure payment handling.
 * **S3** for product images
 
 
-* Password hashing using bcrypt
+* Password hashing
 
 ## API Endpoints (Sample)
  **Auth**
