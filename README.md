@@ -8,7 +8,7 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * View product details and images
 * Add/remove items from the cart
 * Secure checkout with Stripe payments
-* View order history and order details
+* View order history 
 
 ### **Admin Features**
 * Admin login
