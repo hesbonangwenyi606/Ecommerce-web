@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getProducts } from "./api";
+import { getProducts, createOrder } from "./api";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -11,20 +11,26 @@ function App() {
       .catch(err => console.error(err));
   }, []);
 
-  // Add product to cart
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-  };
-
-  // Remove product from cart
+  const addToCart = (product) => setCart([...cart, product]);
   const removeFromCart = (index) => {
     const newCart = [...cart];
     newCart.splice(index, 1);
     setCart(newCart);
   };
-
-  // Calculate total price
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+
+  const handleCheckout = async () => {
+    if (cart.length === 0) return alert("Cart is empty");
+    try {
+      const orderData = { items: cart.map(item => ({ productId: item.id, quantity: 1 })) };
+      await createOrder(orderData);
+      alert("Order created successfully!");
+      setCart([]);
+    } catch (err) {
+      console.error(err);
+      alert("Error creating order.");
+    }
+  };
 
   return (
     <div>
@@ -32,7 +38,7 @@ function App() {
       <ul>
         {products.map(product => (
           <li key={product.id}>
-            {product.name} - ${product.price} 
+            {product.name} - ${product.price}
             <button onClick={() => addToCart(product)}>Add to Cart</button>
           </li>
         ))}
@@ -48,6 +54,7 @@ function App() {
         ))}
       </ul>
       <p>Total: ${totalPrice}</p>
+      <button onClick={handleCheckout}>Checkout</button>
     </div>
   );
 }
