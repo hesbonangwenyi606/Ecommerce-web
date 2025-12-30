@@ -64,9 +64,7 @@ DATABASE_URL=postgresql://user:password@localhost:5432/ecommerce
 JWT_SECRET=your_jwt_secret
 STRIPE_SECRET_KEY=your_stripe_key
 AWS_ACCESS_KEY_ID=XXXX
-AWS_SECRET_ACCESS_KEY=XXXX
-
-```
+AWS_SECRET
 
 ### Install dependencies
 **Backend**
