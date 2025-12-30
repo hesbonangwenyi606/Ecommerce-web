@@ -115,7 +115,7 @@ The backend integrates Stripe for secure payment handling.
 * **RDS** for PostgreSQL
 * **S3** for product images
 
-You can also containerize using 
+You can also conta
 
 
 ## Authentication
