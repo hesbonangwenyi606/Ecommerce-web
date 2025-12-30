@@ -122,14 +122,13 @@ POST   /api/products   (admin)
 PUT    /api/products/:id (admin)
 DELETE /api/products/:id (admin)
 
-
 ### **Payments**
 POST /api/payments/create-checkout-session
 
 ## Testing
 * Jest (backend)
 * React Testing Library (frontend)
-* Postman collection (optional)
+* Postman collec
 
 ## Contributing
 1. Fork the repo
