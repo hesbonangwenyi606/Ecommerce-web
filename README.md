@@ -127,8 +127,7 @@ POST /api/payments/create-checkout-session
 
 ## Testing
 * Jest (backend)
-* React Testing Library (frontend)
-*
+* React Testing 
 
 ## Contributing
 1. Fork the repo
