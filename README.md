@@ -60,9 +60,6 @@ cd ecommerce-platform
 **Setup environment variables**
 Create a `.env` file in the **server** folder:
 
-DATABASE_U
-
-
 ### Install dependencies
 **Backend**
 
