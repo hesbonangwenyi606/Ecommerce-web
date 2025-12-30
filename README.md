@@ -125,7 +125,7 @@ DELETE /api/products/:id (admin)
 ### **Orders**
 POST /api/orders
 GET  /api/orders/user
-GET  /api/orders/:id
+GET  
 
 ### **Payments**
 POST /api/payments/create-checkout-session
