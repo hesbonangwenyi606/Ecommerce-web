@@ -99,7 +99,7 @@ The app should be live at:
 * Categories
 * Orders
 * OrderItems
-* Payments
+* Payme
 
 ## Deployment
 * **EC2** for Node backend
