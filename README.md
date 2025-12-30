@@ -100,7 +100,7 @@ The app should be live at:
 * Orders
 * OrderItems
 * Payments
-You may generate migrations using Prisma/Sequelize depending on your stack.
+You may generate migrations using Prisma/Sequelize depen
 
 ## Deployment
 * **EC2** for Node backend
