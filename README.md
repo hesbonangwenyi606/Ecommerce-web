@@ -15,7 +15,6 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * Stripe API
 
 ### **Infrastructure**
-* Nginx Reverse Proxy
 
 ## Project Structure
 root/
