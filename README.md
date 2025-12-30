@@ -5,7 +5,7 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 ### **User Features**
 * Create an account and log in (JWT authentication)
 * Browse products with filters and categories
-* View product details and images
+* View product 
 
 ### **Admin Features**
 * Admin login
