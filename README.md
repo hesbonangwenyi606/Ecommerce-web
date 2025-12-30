@@ -102,7 +102,7 @@ The app should be live at:
 * Payments
 You may generate migrations using Prisma/Sequelize depending on your stack.
 
-## Payments (Stripe)
+## Paymen
 
 ## Deployment
 * **EC2** for Node backend
