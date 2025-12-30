@@ -117,7 +117,7 @@ The backend integrates Stripe for secure payment handling.
 
 
 
-## Authentication
+## Authentic
 * JSON Web Tokens (JWT)
 * Password hashing using bcrypt
 * Protected routes for user and admin
