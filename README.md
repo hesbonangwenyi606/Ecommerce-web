@@ -60,7 +60,7 @@ cd ecommerce-platform
 **Setup environment variables**
 Create a `.env` file in the **server** folder:
 
-DATABASE_URL=postgresql://user:password@localhost:5432/ecommerce
+DATABASE_URL=postgresql://user:
 
 
 ### Install dependencies
