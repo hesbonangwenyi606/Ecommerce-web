@@ -117,7 +117,6 @@ The backend integrates Stripe for secure payment handling.
 
 
 * Password hashing using bcrypt
-* Prot
 
 ## API Endpoints (Sample)
  **Auth**
