@@ -51,7 +51,6 @@ npm install
 
 
 **Run the project**
-
 **Backend**
 npm run dev
 
