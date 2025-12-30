@@ -46,7 +46,6 @@ cd server
 npm install
 
 **Frontend**
-
 cd ../client
 npm install
 
