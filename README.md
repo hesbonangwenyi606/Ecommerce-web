@@ -119,7 +119,6 @@ The backend integrates Stripe for secure payment handling.
 ## API Endpoints
 POST /api/auth/register
 POST /api/auth/login
-GET  /api
 ```
 **Products**
 GET    /api/products
