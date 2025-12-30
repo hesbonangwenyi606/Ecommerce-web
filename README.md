@@ -116,7 +116,7 @@ The backend integrates Stripe for secure payment handling.
 * **S3** for product images
 
 
-## API Endpoints
+## API End
 **Products**
 GET    /api/products
 GET    /api/products/:id
