@@ -113,7 +113,7 @@ The backend integrates Stripe for secure payment handling.
 * **EC2** for Node backend
 * **S3 + CloudFront** for React frontend
 * **RDS** for PostgreSQL
-* **S3** for product images
+* **S3** for 
 
 **Products**
 GET    /api/products
