@@ -16,7 +16,6 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 
 ### **Infrastructure**
 * Nginx Reverse Proxy
-* Docker
 
 ## Project Structure
 root/
