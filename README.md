@@ -125,8 +125,6 @@ DELETE /api/products/:id (admin)
 ### **Payments**
 POST /api/payments/create-checkout-session
 
-## Testing
-
 
 ## Contributing
 1. Fork the repo
