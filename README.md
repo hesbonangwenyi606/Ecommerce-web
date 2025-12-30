@@ -1,5 +1,5 @@
 # E-Commerce Platform
-A full‑stack e‑commerce web application built with **React**, **Node.js**, **Express**, **PostgreSQL**, **Stripe**, and **AWS**. The platform supports user management, product browsing, shopping cart, checkout, payment processing, and an admin dashboard.
+A full‑stack e‑commerce web application built with **React**, **Node.js**, **Express**, **PostgreSQL**, **Stripe**, and **AWS**. The platform supports user management, product browsing, shopping cart, and an admin dashboard.
 
 ## Tech Stack
 ### **Frontend**
