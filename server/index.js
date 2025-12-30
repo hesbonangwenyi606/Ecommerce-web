@@ -7,6 +7,12 @@ const app = express();
 app.use(cors({ origin: "http://localhost:8080", credentials: true }));
 app.use(express.json());
 
+// Root route (visiting /)
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
+// Health route
 app.get("/api/health", (req, res) => res.json({ status: "Backend connected " }));
 
 // Auth routes
