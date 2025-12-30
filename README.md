@@ -7,7 +7,6 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * Browse products with filters and categories
 * View product details and images
 * Add/remove items from the cart
-* Secure checkou
 
 ### **Admin Features**
 * Admin login
