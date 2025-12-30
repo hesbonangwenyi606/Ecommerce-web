@@ -115,8 +115,6 @@ The backend integrates Stripe for secure payment handling.
 * **RDS** for PostgreSQL
 * **S3** for product images
 
-
-## API End
 **Products**
 GET    /api/products
 GET    /api/products/:id
