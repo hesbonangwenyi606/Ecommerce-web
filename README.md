@@ -109,7 +109,6 @@ The backend integrates Stripe for secure payment handling.
 * Generates Stripe checkout sessions
 
 ## Deployment
-**AWS
 * **EC2** for Node backend
 * **S3 + CloudFront** for React frontend
 * **RDS** for PostgreSQL
