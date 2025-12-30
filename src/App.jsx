@@ -1,48 +1,28 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Login from "./Login";
 import Signup from "./Signup";
-import Success from "./Success";
-import Cancel from "./Cancel";
+import LuxeStore from "./pages/LuxeStore";
 import ProtectedRoute from "./ProtectedRoute";
-import { getCurrentUser } from "./api";
 
 function App() {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (token) {
-      getCurrentUser()
-        .then(res => setUser(res.data))
-        .catch(() => setUser(null))
-        .finally(() => setLoading(false));
-    } else {
-      setLoading(false);
-    }
-  }, []);
-
-  if (loading) return <p>Loading...</p>;
-
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route
-          path="/"
+          path="/luxestore"
           element={
-            <ProtectedRoute user={user}>
-              <Home user={user} />
+            <ProtectedRoute>
+              <LuxeStore />
             </ProtectedRoute>
           }
         />
-        <Route path="/login" element={<Login setUser={setUser} />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/success" element={<Success />} />
-        <Route path="/cancel" element={<Cancel />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
