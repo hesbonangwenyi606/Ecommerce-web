@@ -126,8 +126,7 @@ DELETE /api/products/:id (admin)
 POST /api/payments/create-checkout-session
 
 ## Testing
-* Jest (backend)
-* React Testing 
+* Jest (backend
 
 ## Contributing
 1. Fork the repo
