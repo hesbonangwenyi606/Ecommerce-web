@@ -14,8 +14,7 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * PostgreSQL
 * Stripe API
 
-### **Infrastructure**
-
+### **Infr
 ## Project Structure
 root/
  ├── client/               # React Frontend
