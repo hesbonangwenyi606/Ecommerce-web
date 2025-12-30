@@ -12,7 +12,6 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 * Node.js
 * Express.js
 * PostgreSQL (via Prisma or Sequelize or pg)
-* JWT Authentication
 * Stripe API
 
 ### **Infrastructure**
