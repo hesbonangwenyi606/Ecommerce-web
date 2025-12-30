@@ -103,7 +103,7 @@ The app should be live at:
 You may generate migrations using Prisma/Sequelize depending on your stack.
 
 ## Payments (Stripe)
-The backend integrates Stripe for secure 
+The backend integrates Stripe 
 
 ## Deployment
 * **EC2** for Node backend
