@@ -104,7 +104,7 @@ You may generate migrations using Prisma/Sequelize depending on your stack.
 
 ## Payments (Stripe)
 The backend integrates Stripe for secure payment handling.
-* Supports test and live modes
+* Supports test 
 
 ## Deployment
 * **EC2** for Node backend
