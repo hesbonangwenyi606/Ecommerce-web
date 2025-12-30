@@ -4,7 +4,7 @@ A full‑stack e‑commerce web application built with **React**, **Node.js**, *
 ## Features
 ### **Admin Features**
 * Admin login
-* Create, update, delete products
+* Create, updat
 
 ## Tech Stack
 ### **Frontend**
