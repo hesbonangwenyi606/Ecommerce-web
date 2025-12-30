@@ -123,7 +123,7 @@ PUT    /api/products/:id (admin)
 DELETE /api/products/:id (admin)
 
 ### **Orders**
-POST /api
+
 
 ### **Payments**
 POST /api/payments/create-checkout-session
